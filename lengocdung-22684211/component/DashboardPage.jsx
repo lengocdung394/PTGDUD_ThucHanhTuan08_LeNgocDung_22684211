@@ -12,12 +12,12 @@ export default function DashboardPage() {
   ]);
 
   return (
-    <div className="flex bg-gray-100">
+    <div className="flex bg-gray-100" style={{border:"1px solid gray"}}>
       {/* Sidebar */}
       <aside className="w-64 bg-white p-4 shadow">
-        <p className="font-bold text-pink-600 w-12">Logo</p>
+        <p className="font-bold text-pink-600 w-12" style={{fontSize:"25px"}}>Logo</p>
         <ul className="space-y-2">
-          <li className="flex items-center text-pink-600 font-semibold m-4">
+          <li className="flex items-center text-white font-semibold m-4 p-2 bg-pink-600 rounded">
             <span className="mr-3">📊</span> Dashboard
           </li>
           <li className="flex items-center text-gray-700  m-4">
@@ -77,16 +77,14 @@ export default function DashboardPage() {
           </button>
         </div>
 
-
-
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 p-6">
+      <main className="flex-1 p-2">
 
         {/* Search input */}
-        <div style={{ height: "60px", display: "flex", borderBottom: "2px solid rgb(9, 5, 5)", paddingTop: "15px" }}>
-          <h2 style={{ margin: "0", color: '#FF4081', fontWeight: "bold" }}>DashBoard</h2>
+        <div style={{ height: "50px", display: "flex", borderBottom: "2px solid rgb(9, 5, 5)"}}>
+          <h2 style={{ margin: "0", color: '#FF4081', fontWeight: "bold", fontSize:"30px" , marginRight:"210px"}}>DashBoard</h2>
           <input type="text" style={{ width: "220px", height: "25px", marginLeft: "470px", borderRadius: "5px", border: "1px solid white ", backgroundColor: "#EEEEEE" }} />
           <img src="../image/bell.png" alt="" style={{ width: "25px", height: "25px", marginLeft: "20px", marginRight: "20px" }} />
           <h3 style={{ margin: "0px" }}>?</h3>
@@ -105,7 +103,7 @@ export default function DashboardPage() {
               <p className="text-3xl font-extrabold text-gray-800">$92,405</p>
               <p className="text-green-600 text-sm mt-1">▲ 5.39% period of change</p>
             </div>
-            <div className="text-pink-600 text-2xl">🛒</div>
+            <div className="text-pink-600 text-2xl rounded-2xl border-4">🛒</div>
           </div>
 
           {/* Profit */}
@@ -115,7 +113,7 @@ export default function DashboardPage() {
               <p className="text-3xl font-extrabold text-gray-800">$32,218</p>
               <p className="text-green-600 text-sm mt-1">▲ 5.39% period of change</p>
             </div>
-            <div className="text-blue-600 text-2xl">💰</div>
+            <div className="text-blue-600 text-2xl rounded-2xl border-4">💰</div>
           </div>
 
           {/* New Customers */}
@@ -125,7 +123,7 @@ export default function DashboardPage() {
               <p className="text-3xl font-extrabold text-gray-800">298</p>
               <p className="text-green-600 text-sm mt-1">▲ 6.84% period of change</p>
             </div>
-            <div className="text-blue-600 text-2xl">👥</div>
+            <div className="text-blue-600 text-2xl rounded-2xl border-4">👥</div>
           </div>
         </div>
 
@@ -137,7 +135,7 @@ export default function DashboardPage() {
         <div className="bg-white rounded-lg shadow p-4">
           <table className="w-full text-sm text-left">
             <thead>
-              <tr className="text-gray-500 border-b">
+              <tr className="text-gray-500">
                 <th>Customer Name</th>
                 <th>Company</th>
                 <th>Order Value</th>
@@ -147,10 +145,10 @@ export default function DashboardPage() {
             </thead>
             <tbody>
               {data.map((row, idx) => (
-                <tr key={idx} className="border-b hover:bg-gray-50">
+                <tr key={idx} className= "hover:bg-gray-50">
                   <td className="py-2">
                     <div style={{display: "flex", alignItems: "center"}}>
-                      {<img style={{width:"30px", height:"30px", borderRadius:"15px"}} src={row.image}></img>}
+                      {<img style={{width:"30px", height:"30px", borderRadius:"15px", marginRight:"5px"}} src={row.image}></img>}
                       <p> {row.name}</p>
                     </div></td>
                   <td>{row.company}</td>
@@ -174,7 +172,7 @@ export default function DashboardPage() {
           </table>
         </div>
         <div style={{ display: "flex" }}>
-          <p style={{ width: "200px" }}>63 result</p>
+          <p style={{ width: "70px" , marginRight:"350px"}}>63 result</p>
           <ul style={{ display: "flex", justifyContent: "center", listStyle: "none", padding: "0px", marginLeft: "430px" }}>
             <li style={{ width: "25px", height: "25px", padding: "5px" }}><img style={{ width: "25px", height: "25px" }} src="../Lab_05/left-arrow.png" alt="" /></li>
             <li style={{ width: "25px", height: "25px", padding: "5px", borderRadius: "20px", color: "white", justifyContent: "center", backgroundColor: "#FF4081" }}>1</li>
