@@ -24,7 +24,7 @@ function RecipeHighlight() {
           </p>
           <div className="flex items-center space-x-3 mb-4">
             <img
-              src="/chef-avatar.png"
+              src="../image/image.png"
               alt="Chef"
               className="h-8 w-8 rounded-full"
             />

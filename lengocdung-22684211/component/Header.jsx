@@ -8,7 +8,7 @@ function Header() {
       <div className="flex items-center justify-between px-6 py-4 bg-white shadow-md">
       {/* Logo */}
       <div className="flex items-center space-x-2">
-        <img src="https://www.svgrepo.com/show/306403/chef.svg" alt="Cheffify Logo" className="h-6 w-6"  />
+        <img src="../image/chefify.png" alt="Cheffify Logo" className="h-6 w-6"  />
         <span className="text-pink-600 font-bold text-xl">Cheffify</span>
       </div>
 
